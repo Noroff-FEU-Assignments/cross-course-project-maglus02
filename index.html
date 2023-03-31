@@ -1,13 +1,187 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <h2>Web Security</h2>
-    <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
-    <p id="web-security-answer">If I where to advise a potential client about securing their website I would firstly let the client know about the most common web security threats. Security threats like: SQL injection, Cross-Site request forgery and Cross-Site scripting. After I would also go through some other common vulnerabilities, like Clickjacking and Denial of Serivce, etc. Then I would give the client advise on how they can protect themselves against those. After that I would go over some good practices when it comes to web security. Some practices i would go over include: data encryption, going through known vulnerabilities when coding, data sanitization, regularly scanning your application for threats and vulnerabilities, effective password management, using HTTPS, and keeping software updated. Lastly I would introduce them to tools they could use to check for vulnerabilities in their application, like a website vulnerability scanner. Tools like those are nice to have when working on your application.</p>
-  </body>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/8404d11a1b.js" crossorigin="anonymous"></script>
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/frontpage.css" rel="stylesheet" />
+  <link href="css/navigation-footer.css" rel="stylesheet" />
+  <script src="js/index.js"></script>
+  <title>Cheap digital video games | GameHub</title>
+  <meta name="description" content="Get the cheapest digital video games at GameHub.">
+</head>
+
+<body>
+  <header>
+    <div id="logo"><a href="index.html"><img src="images/GameHub_Logo.png"></a></div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileNav(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <div class="mobile-search">
+          <input type="text" class="mobile-input" name="search" placeholder="Search for games" />
+          <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <h1>The cheapest digital video games at GameHub!</h1>
+        <div class="desktop-search">
+          <input type="text" name="search" placeholder="Search for games" />
+          <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="section featured-games">
+      <h2 class="section-title">Featured Games</h2>
+      <a href="games.html"><button class="view-more-btn">View more</button></a>
+      <div class="games">
+        <div class="game" id="gtav">
+          <div>
+            <img class="game-cover" src="images/Game-covers/gta-v.jpg" alt="GTA V game cover">
+            <a href="games/gta-v.html"><button class="view-game">View game</button></a>
+          </div>
+          <p class="game-title"><b>Grand Theft Auto V</b></p>
+          <p class="game-price">$25</p>
+        </div>
+        <div class="game">
+          <img class="game-cover" src="images/Game-covers/cyberpunk-2077.jpg" alt="Cyberpunk 2077 game cover">
+          <p class="game-title"><b>Cyberpunk 2077</b></p>
+          <p class="game-price">$35</p>
+        </div>
+        <div class="game">
+          <img class="game-cover" src="images/Game-covers/hogwarts-legacy.jpg" alt="Hogwarts Legacy game cover">
+          <p class="game-title"><b>Hogwarts Legacy</b></p>
+          <p class="game-price">$65</p>
+        </div>
+        <div class="game">
+          <img class="game-cover" src="images/Game-covers/The-Witcher-3.jpg" alt="The Witcher 3 game cover">
+          <p class="game-title"><b>The Witcher 3</b></p>
+          <p class="game-price">$18</p>
+        </div>
+        <div class="game">
+          <img class="game-cover" src="images/Game-covers/elden-ring.jpg" alt="Elden Ring game cover">
+          <p class="game-title"><b>Elden Ring</b></p>
+          <p class="game-price">$50</p>
+        </div>
+      </div>
+    </div>
+    <div class="section user-reviews">
+      <h2 class="section-title">User Reviews</h2>
+      <div class="review-arrows">
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="reviews">
+        <div class="review" id="rev1">
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="description">GameHub has become my go-to place to buy my games these days. They got the cheapest
+            games on the market and always delivers.</p>
+          <p class="name">Peter</p>
+        </div>
+        <div class="review" id="rev2">
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="description">Got my game in under a minute after ordering. Fast and simple, nothing much to complain
+            about.</p>
+          <p class="name">Maria</p>
+        </div>
+        <div class="review" id="rev3">
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="description">Fast delivery and a great collection of games. After I ordered the wrong game, I
+            contacted support and they fixed it very fast.</p>
+          <p class="name">Anders</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="f-content">
+      <div class="f-content-flex">
+        <img class="f-logo" src="images/GameHub_Logo.png">
+        <div class="f-links">
+          <p class="f-links-title">GameHub</p>
+          <a class="f-link" href="about.html">
+            <p>About us</p>
+          </a>
+          <a class="f-link" href="contact.html">
+            <p>Contact us</p>
+          </a>
+        </div>
+        <div class="f-links">
+          <p class="f-links-title">Refunds & Legal</p>
+          <a class="f-link" href="#">
+            <p>Refunds</p>
+          </a>
+          <a class="f-link" href="#">
+            <p>Legal</p>
+          </a>
+        </div>
+        <div class="f-links">
+          <p class="f-links-title">Terms & Policies</p>
+          <a class="f-link" href="#">
+            <p>Terms & Conditions</p>
+          </a>
+          <a class="f-link" href="#">
+            <p>Privacy Policy</p>
+          </a>
+        </div>
+      </div>
+      <div class="f-bottom">
+        <p class="f-copyright">© GameHub 2023</p>
+        <div class="f-social-icons">
+          <i class="fa-brands fa-instagram" title="Instagram"></i>
+          <i class="fa-brands fa-facebook" title="Facebook"></i>
+          <i class="fa-brands fa-twitter" title="Twitter"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

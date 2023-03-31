@@ -1,0 +1,59 @@
+html {
+  --primary: #1b203d;
+  --secondary: #ffffff;
+  --tertiary: #000000;
+  --light-grey: #EFEFEF;
+  --lighter-grey: #9F9F9F;
+  --grey: #E7E7E7;
+  --dark-grey: #B9B9B9;
+  --darker-grey: #6D6D6D;
+
+  --Thin: 100;
+  --ExtraLight: 200;
+  --Light: 300;
+  --Regular: 400;
+  --Medium: 500;
+  --SemiBold: 600;
+  --Bold: 700;
+  --ExtraBold: 800;
+  --Black: 900;
+
+  min-height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1.page-title {
+  font-size: 55px;
+  font-weight: var(--SemiBold);
+}
+
+div.container {
+  margin: 0px 120px 0px 120px;
+  position: relative;
+}
+
+div.container,
+h1.page-title {
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 900px) {
+  div.container {
+    margin: 0px 20px 0px 20px;
+  }
+
+  h1.page-title {
+    font-size: 40px;
+    text-align: center;
+  }
+}
