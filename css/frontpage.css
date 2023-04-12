@@ -150,6 +150,10 @@ h2.section-title {
     opacity: 1;
 }
 
+.games .game .game-title {
+    font-weight: var(--Bold);
+}
+
 .games .game .game-title,
 .games .game .game-price {
     font-size: 25px;
@@ -159,6 +163,7 @@ h2.section-title {
 .games .game .game-price {
     margin-top: -15px;
     font-style: italic;
+    font-weight: var(--Regular);
 }
 
 .user-reviews {
