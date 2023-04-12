@@ -46,6 +46,10 @@
 }
 
 /*Payment method*/
+.payment-method {
+    max-width: 1680px;
+    margin: auto;
+}
 .payment-method .payment,
 .payment-method .delivery-email h2 {
     font-size: 25px;
@@ -112,7 +116,7 @@
 }
 
 .payment-method .continue-div .continue-btn {
-    font-size: 30px;
+    font-size: 35px;
     cursor: pointer;
     margin: 40px 0px;
     padding: 10px 0px;

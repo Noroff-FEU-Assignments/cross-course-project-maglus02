@@ -1,7 +1,9 @@
-div.container {
-    margin-top: 40px;
+div.game {
     display: flex;
+    margin: auto;
+    margin-top: 40px;
     margin-bottom: 40px;
+    max-width: 1680px;
 }
 
 .game-poster {
@@ -9,6 +11,7 @@ div.container {
     height: 650px;
     border-radius: 9px;
     flex: 1;
+
 }
 
 .game-poster-mobile {
@@ -111,7 +114,7 @@ div.container {
     cursor: pointer;
 }
 
-.game-info .add-to-cart, .game-info .platform .platform-btn, .game-info .platforms, .game-info .platform h3, .game-info .game-desc, .game-info .release-date, .game-info .developer, .game-info .game-modes, .game-info .d-key, .game-info .game-title, .game-info, .game-poster-mobile-margin, .game-poster-mobile, .game-poster {
+.game-info .add-to-cart, .game-info .platform .platform-btn, .game-info .platforms, .game-info .platform h3, .game-info .game-desc, .game-info .release-date, .game-info .developer, .game-info .game-modes, .game-info .d-key, .game-info .game-title, .game-info, .game-poster-mobile-margin, .game-poster-mobile, .game-poster, div.game {
     transition: 0.2s;
 }
 
@@ -126,7 +129,7 @@ div.container {
 }
 
 @media only screen and (max-width: 1300px) {
-    div.container {
+    div.game {
         display: block;
     }
 
@@ -145,7 +148,7 @@ div.container {
 }
 
 @media only screen and (max-width: 900px) {
-    div.container {
+    div.container, div.game {
         margin: 0px 0px 0px 0px;
     }
 
