@@ -21,20 +21,24 @@ div.contact-us-bg {
     padding-left: 40px;
 }
 
-div.about-us-bg p, div.contact-us-bg p {
+div.about-us-bg p, div.contact-us-bg h2, div.contact-us-bg h3 {
     font-size: 25px;
 }
 
-div.contact-us-bg p {
+div.contact-us-bg h2 {
+    font-weight: var(--Bold); 
+}
+
+div.contact-us-bg h3 {
     font-weight: var(--Medium);
 }
 
-div.contact-us-bg p i {
+div.contact-us-bg h3 i {
     font-size: 35px;
     margin-right: 20px;
 }
 
-div.contact-us-bg p.bottom {
+div.contact-us-bg h3.bottom {
     margin-top: 80px;
 }
 
@@ -83,7 +87,7 @@ div.bg-txt-about .about-us-bg img {
         font-size: 22px;
     }
 
-    div.contact-us-bg p {
+    div.contact-us-bg h2, div.contact-us-bg h3 {
         font-size: 20px;
     }
 

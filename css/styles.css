@@ -4,9 +4,11 @@ html {
   --tertiary: #000000;
   --light-grey: #EFEFEF;
   --lighter-grey: #9F9F9F;
+  --status-btn-txt: #5a5a5a;
   --grey: #E7E7E7;
   --dark-grey: #B9B9B9;
   --darker-grey: #6D6D6D;
+  --dig-key: #3f3f3f;
 
   --Thin: 100;
   --ExtraLight: 200;

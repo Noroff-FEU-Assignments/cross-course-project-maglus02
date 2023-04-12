@@ -44,7 +44,7 @@ div.container {
     font-size: 20px;
     font-weight: var(--Medium);
     background-color: var(--dark-grey);
-    color: var(--darker-grey);
+    color: var(--dig-key);
     border-radius: 9px;
     padding: 10px;
     margin: 30px 0px 20px 20px;
