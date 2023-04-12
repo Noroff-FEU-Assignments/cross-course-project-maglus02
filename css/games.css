@@ -53,3 +53,9 @@ div.sort {
         margin: 5px 10px;
     }
 }
+
+@media only screen and (max-width: 530px) {
+    .games img {
+        margin: 3px 4px;
+    }
+}

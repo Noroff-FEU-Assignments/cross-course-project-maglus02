@@ -69,6 +69,8 @@
     border-radius: 9px;
     font-size: 25px;
     font-weight: var(--Medium);
+    color: var(--black);
+    background-color: transparent;
 }
 
 .payment-method .continue-div .continue-btn,

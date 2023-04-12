@@ -91,6 +91,7 @@ div.container {
     height: 70px;
     cursor: pointer;
     margin-right: 20px;
+    color: var(--black);
 }
 
 .game-info .platform .platform-btn:hover, .game-info .add-to-cart {
