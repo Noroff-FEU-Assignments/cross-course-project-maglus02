@@ -58,6 +58,11 @@
     font-size: 20px;
 }
 
+.hero .hero-content .desktop-search .search-btn {
+    padding-top: 21px;
+    padding-bottom: 19px;
+}
+
 .hero .hero-content input[type="text"] {
     border-radius: 9px 0px 0px 9px;
     border: 1px solid var(--secondary);
@@ -87,8 +92,6 @@ h2.section-title {
 
 .featured-games .view-more-btn {
     float: right;
-    width: 263px;
-    height: 50px;
     margin-top: 30px;
     font-size: 20px;
     font-weight: var(--SemiBold);
@@ -97,6 +100,9 @@ h2.section-title {
     color: var(--primary);
     background: transparent;
     cursor: pointer;
+    text-align: center;
+    padding: 10px 70px;
+    text-decoration: none;
 }
 
 .games {
@@ -122,14 +128,16 @@ h2.section-title {
 
 .game .view-game {
     border-radius: 9px;
-    width: 226px;
-    height: 53px;
+    padding: 10px 0px;
+    width: 250px;
+    text-decoration: none;
+    text-align: center;
     background-color: var(--primary);
     color: var(--secondary);
     border: solid 2px var(--secondary);
     cursor: pointer;
     font-weight: var(--SemiBold);
-    font-size: 22px;
+    font-size: 18px;
     opacity: 0;
     position: absolute;
     bottom: 20%;
@@ -292,7 +300,6 @@ h2.section-title,
 
     .game .view-game {
         width: 150px;
-        height: 40px;
         border-width: 1px;
         font-size: 15px;
     }

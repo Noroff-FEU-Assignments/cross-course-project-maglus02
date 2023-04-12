@@ -129,6 +129,8 @@ img {
     border: none;
     color: var(--secondary);
     border-radius: 9px;
+    text-decoration: none;
+    text-align: center;
 }
 
 #f {

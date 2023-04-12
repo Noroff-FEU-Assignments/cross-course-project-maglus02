@@ -5,23 +5,11 @@
     width: 100%;
     margin: 20px 0px 20px 0px;
 }
-
-#state2 {
-    color: var(--primary);
-}
-
-.checkout-status .status-btn span {
+.checkout-status span {
     margin-left: -35px;
 }
 
-#state2,
-.payment-method .methods button {
-    background-color: var(--secondary);
-    border: 2px solid var(--primary);
-    cursor: pointer;
-}
-
-.checkout-status .status-btn {
+.checkout-status .status-btn, .checkout-status .status-btn-state-2 {
     background-color: var(--grey);
     color: var(--lighter-grey);
     border: 2px solid var(--grey);
@@ -37,13 +25,23 @@
     cursor: default;
 }
 
-.checkout-status .status-btn i {
+.payment-method .methods button, .checkout-status .status-btn-state-2 {
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+.checkout-status .status-btn-state-2 {
+    color: var(--primary);
+}
+
+.checkout-status i {
     float: left;
     opacity: 0;
     margin-left: 10px;
 }
 
-#show-i {
+.fa-regular.fa-circle-check.show-i {
     opacity: 1;
 }
 
@@ -108,10 +106,10 @@
 .payment-method .continue-div {
     max-width: 500px;
     margin: auto;
+    display: flex;
 }
 
 .payment-method .continue-div .continue-btn {
-    max-width: 500px;
     font-size: 30px;
     cursor: pointer;
     margin: 40px 0px;
@@ -119,6 +117,8 @@
     width: 100%;
     border-radius: 9px;
     border: none;
+    text-align: center;
+    text-decoration: none;
 }
 
 /*Summary page*/
@@ -199,7 +199,7 @@
 /*Transitions*/
 .checkout-status .status-btn,
 .checkout-status,
-#state2,
+.checkout-status .status-btn-state-2,
 .payment-method .delivery-email,
 .payment-method .methods,
 .payment-method .payment,
@@ -220,12 +220,12 @@
 
 /*Media queries*/
 @media only screen and (max-width: 1400px) {
-    .checkout-status .status-btn {
+    .checkout-status .status-btn, .checkout-status .status-btn-state-2 {
         font-size: 18px;
         padding: 15px 0px;
     }
 
-    .checkout-status .status-btn span {
+    .checkout-status span {
         margin-left: -20px;
     }
 }
@@ -237,23 +237,23 @@
 }
 
 @media only screen and (max-width: 920px) {
-    .checkout-status .status-btn {
+    .checkout-status .status-btn, .checkout-status .status-btn-state-2 {
         border-radius: 100px;
         width: 44px;
         font-size: 20px;
         padding: 10px 0px;
     }
 
-    #state2 {
+    .checkout-status .status-btn-state-2 {
         background-color: var(--primary);
         color: var(--secondary);
     }
 
-    .checkout-status .status-btn span {
+    .checkout-status span {
         display: none;
     }
 
-    .checkout-status .status-btn i {
+    .checkout-status i {
         float: none;
         margin: 0;
     }
