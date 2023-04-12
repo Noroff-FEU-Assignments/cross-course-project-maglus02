@@ -232,6 +232,7 @@ img {
         line-height: 25px;
     }
     .quantity,
+    .quantity h2,
     .product-price h2 {
         font-size: 25px;
     }

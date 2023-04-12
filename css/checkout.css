@@ -123,7 +123,12 @@
 }
 
 /*Summary page*/
-.summary .quantity h2 {
+h1.summary-title {
+    margin: 40px 0px;
+    font-size: 40px;
+    font-weight: var(--SemiBold);
+}
+.quantity h2 {
     margin: 0px;
     margin-left: 30px;
     margin-right: 30px;
@@ -297,7 +302,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .product-price p {
+    .product-price h2 {
         margin-right: 0px;
     }
 }
