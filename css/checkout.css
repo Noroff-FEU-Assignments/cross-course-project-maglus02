@@ -221,7 +221,8 @@ h1.summary-title {
 .payment-method-summary-mobile .method,
 .order-complete i,
 .order-complete h1,
-.order-complete p {
+.order-complete p,
+h1.summary-title {
     transition: 0.2s;
 }
 
@@ -300,6 +301,13 @@ h1.summary-title {
         display: none;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    h1.summary-title {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
 
 @media only screen and (max-width: 900px) {
     .product-price h2 {
