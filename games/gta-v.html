@@ -17,12 +17,14 @@
     <script src="../js/index.js"></script>
     <title>GTA V | GameHub</title>
     <meta name="description" content="Buy Grand Theft Auto V for the cheapest prices at GameHub.">
-    <link rel="icon" type="image/png" href="../images/GameHub_Logo.png"/>
+    <link rel="icon" type="image/png" href="../images/GameHub_Logo.png" />
 </head>
 
 <body>
     <header>
         <div id="logo"><a href="../"><img src="../images/GameHub_Logo.png" alt="GameHub logo in header"></a></div>
+        <input type="checkbox" id="menu-checkbox" aria-label="Mobile navigation menu">
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
         <nav class="nav">
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -30,28 +32,17 @@
                 <li><a href="../about.html">About us</a></li>
                 <li><a href="../contact.html">Contact</a></li>
                 <li><a href="#">Sign in</a></li>
-                <li><a href="../cart.html" aria-label="Go to cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="../cart.html" aria-label="Go to cart" id="cart-content"><i
+                            class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
-        <div id="hamburger-icon" onclick="mobileNav(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../games.html">Games</a></li>
-                <li><a href="../about.html">About us</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="#">Sign in</a></li>
-                <li><a href="../cart.html" aria-label="Go to cart">Cart <i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-        </div>
     </header>
     <main>
         <div class="container">
             <img class="game-poster" src="../images/game-covers/gta-v.jpg" alt="Game poster for GTA V">
             <div class="game-poster-mobile-margin">
-                <img class="game-poster-mobile" src="../images/Game-covers/gtav-art-phone.jpg" alt="Game poster for GTA V on mobile">
+                <img class="game-poster-mobile" src="../images/Game-covers/gtav-art-phone.jpg"
+                    alt="Game poster for GTA V on mobile">
             </div>
             <div class="game-info">
                 <h1 class="game-title">Grand Theft Auto V</h1>
