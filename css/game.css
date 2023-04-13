@@ -187,3 +187,10 @@ div.game {
         padding: 10px;
     }
 }
+
+@media (min-height: 1090px) {
+    .game-info {
+        margin-bottom: 200px;
+    }
+
+}

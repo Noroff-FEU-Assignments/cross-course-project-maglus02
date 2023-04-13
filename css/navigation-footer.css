@@ -63,10 +63,10 @@ header {
 footer {
     background-color: var(--light-grey);
     padding: 50px 120px 30px 120px;
-    position: static;
+    /*position: relative;
     left: 0;
     bottom: 0;
-    overflow: hidden;
+    overflow: hidden;*/
 }
 
 footer .f-content {

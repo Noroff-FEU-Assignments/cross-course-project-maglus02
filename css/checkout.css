@@ -49,6 +49,7 @@
 .payment-method {
     max-width: 1680px;
     margin: auto;
+    flex:1;
 }
 .payment-method .payment,
 .payment-method .delivery-email h2 {
@@ -103,7 +104,7 @@
 
 .payment-method .delivery-email .input-email {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border-radius: 9px;
     border: 2px solid var(--tertiary);
     box-sizing: border-box;
@@ -118,7 +119,7 @@
 .payment-method .continue-div .continue-btn {
     font-size: 35px;
     cursor: pointer;
-    margin: 40px 0px;
+    margin: 80px 0px;
     padding: 10px 0px;
     width: 100%;
     border-radius: 9px;
@@ -334,4 +335,11 @@ h1.summary-title {
     .payment-method-summary-mobile .method {
         font-size: 15px;
     }
+}
+
+@media (min-height: 1090px) {
+    .payment-method .continue-div .continue-btn {
+        margin-bottom: 200px;
+    }
+
 }
