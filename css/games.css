@@ -31,17 +31,20 @@ div.sort select {
     margin: 10px 20px;
 }
 
+/*Transitions*/
 .games img,
 .games,
 div.sort {
     transition: 0.2s;
 }
 
+/*Media queries*/
 @media only screen and (max-width: 950px) {
     .games img {
         height: 276px;
         width: 185px;
     }
+
     div.sort {
         display: block;
         margin-top: 0px;
@@ -63,11 +66,12 @@ div.sort {
 
 @keyframes slideInFromBottom {
     0% {
-      transform: translateY(10%);
-      opacity: 0;
+        transform: translateY(10%);
+        opacity: 0;
     }
+
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
+}

@@ -40,7 +40,7 @@
 .hero .hero-content .mobile-search .search-btn {
     padding: 15px 20px;
     font-size: 15px;
-    flex:  1 1 auto;
+    flex: 1 1 auto;
 }
 
 .hero .hero-content input[type="text"] {
@@ -61,6 +61,10 @@
 .hero .hero-content .desktop-search .search-btn {
     padding-top: 21px;
     padding-bottom: 19px;
+}
+
+.hero .hero-content .desktop-search .search-btn:hover {
+    filter: brightness(85%);
 }
 
 .hero .hero-content input[type="text"] {
@@ -231,6 +235,7 @@ h2.section-title,
 .games .game .game-price,
 .games .game .game-cover,
 .reviews .review,
+.hero .hero-content .desktop-search .search-btn,
 .games .game,
 #rev1,
 #rev2,

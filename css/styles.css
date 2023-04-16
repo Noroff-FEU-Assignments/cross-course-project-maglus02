@@ -1,4 +1,5 @@
 html {
+  /*Colors*/
   --primary: #1b203d;
   --secondary: #ffffff;
   --tertiary: #000000;
@@ -11,6 +12,7 @@ html {
   --dig-key: #3f3f3f;
   --black: #000;
 
+  /*Font weights*/
   --Thin: 100;
   --ExtraLight: 200;
   --Light: 300;
@@ -45,11 +47,13 @@ div.container {
   position: relative;
 }
 
+/*Transitions*/
 div.container,
 h1.page-title {
   transition: 0.2s;
 }
 
+/*Media queries*/
 @media only screen and (max-width: 900px) {
   div.container {
     margin: 0px 20px 0px 20px;

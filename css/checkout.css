@@ -5,11 +5,13 @@
     width: 100%;
     margin: 20px 0px 20px 0px;
 }
+
 .checkout-status span {
     margin-left: -35px;
 }
 
-.checkout-status .status-btn, .checkout-status .status-btn-state-2 {
+.checkout-status .status-btn,
+.checkout-status .status-btn-state-2 {
     background-color: var(--grey);
     color: var(--status-btn-txt);
     border: 2px solid var(--grey);
@@ -25,7 +27,8 @@
     cursor: default;
 }
 
-.payment-method .methods button, .checkout-status .status-btn-state-2 {
+.payment-method .methods button,
+.checkout-status .status-btn-state-2 {
     background-color: var(--secondary);
     border: 2px solid var(--primary);
     cursor: pointer;
@@ -49,8 +52,9 @@
 .payment-method {
     max-width: 1680px;
     margin: auto;
-    flex:1;
+    flex: 1;
 }
+
 .payment-method .payment,
 .payment-method .delivery-email h2 {
     font-size: 25px;
@@ -129,12 +133,17 @@
     font-weight: var(--SemiBold);
 }
 
+.payment-method .continue-div .continue-btn:hover {
+    filter: brightness(85%);
+}
+
 /*Summary page*/
 h1.summary-title {
     margin: 40px 0px;
     font-size: 40px;
     font-weight: var(--SemiBold);
 }
+
 .quantity h2 {
     margin: 0px;
     margin-left: 30px;
@@ -235,7 +244,9 @@ h1.summary-title {
 
 /*Media queries*/
 @media only screen and (max-width: 1400px) {
-    .checkout-status .status-btn, .checkout-status .status-btn-state-2 {
+
+    .checkout-status .status-btn,
+    .checkout-status .status-btn-state-2 {
         font-size: 18px;
         padding: 15px 0px;
     }
@@ -252,7 +263,9 @@ h1.summary-title {
 }
 
 @media only screen and (max-width: 920px) {
-    .checkout-status .status-btn, .checkout-status .status-btn-state-2 {
+
+    .checkout-status .status-btn,
+    .checkout-status .status-btn-state-2 {
         border-radius: 100px;
         width: 44px;
         font-size: 20px;
@@ -311,10 +324,10 @@ h1.summary-title {
 
 @media only screen and (max-width: 600px) {
     h1.summary-title {
-      font-size: 30px;
-      text-align: center;
+        font-size: 30px;
+        text-align: center;
     }
-  }
+}
 
 @media only screen and (max-width: 900px) {
     .product-price h2 {

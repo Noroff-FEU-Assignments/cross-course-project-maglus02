@@ -1,10 +1,12 @@
-div.bg-txt, div.bg-txt-about {
+div.bg-txt,
+div.bg-txt-about {
     display: flex;
     max-width: 1680px;
     margin: auto;
 }
 
-div.about-us-bg, div.contact-us-bg {
+div.about-us-bg,
+div.contact-us-bg {
     background-color: var(--grey);
     border-radius: 9px;
     padding: 20px;
@@ -21,12 +23,14 @@ div.contact-us-bg {
     padding-left: 40px;
 }
 
-div.about-us-bg p, div.contact-us-bg h2, div.contact-us-bg h3 {
+div.about-us-bg p,
+div.contact-us-bg h2,
+div.contact-us-bg h3 {
     font-size: 25px;
 }
 
 div.contact-us-bg h2 {
-    font-weight: var(--Bold); 
+    font-weight: var(--Bold);
 }
 
 div.contact-us-bg h3 {
@@ -58,6 +62,7 @@ div.bg-txt-about .about-us-bg img {
     display: none;
 }
 
+/*Transitions*/
 div.bg-txt,
 div.bg-txt-about,
 div.about-us-bg,
@@ -66,12 +71,14 @@ div.bg-txt-about .about-us-bg img {
     transition: 0.2s;
 }
 
+/*Media queries*/
 @media only screen and (max-width: 1300px) {
     div.bg-txt-about {
         display: block;
     }
 
-    div.about-us-bg, div.contact-us-bg {
+    div.about-us-bg,
+    div.contact-us-bg {
         margin-right: 0px;
     }
 
@@ -87,7 +94,8 @@ div.bg-txt-about .about-us-bg img {
         font-size: 22px;
     }
 
-    div.contact-us-bg h2, div.contact-us-bg h3 {
+    div.contact-us-bg h2,
+    div.contact-us-bg h3 {
         font-size: 20px;
     }
 
@@ -95,7 +103,8 @@ div.bg-txt-about .about-us-bg img {
         padding: 20px;
     }
 
-    div.about-us-bg, div.contact-us-bg {
+    div.about-us-bg,
+    div.contact-us-bg {
         border-radius: 0px;
     }
 
@@ -113,7 +122,9 @@ div.bg-txt-about .about-us-bg img {
 }
 
 @media (min-height: 1090px) {
-    div.bg-txt, div.bg-txt-about {
+
+    div.bg-txt,
+    div.bg-txt-about {
         margin-bottom: 200px;
     }
 

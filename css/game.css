@@ -65,7 +65,10 @@ div.game {
     margin: 20px 0px 20px 0px;
 }
 
-.game-info .game-desc, .game-info .release-date, .game-info .developer, .game-info .game-modes {
+.game-info .game-desc,
+.game-info .release-date,
+.game-info .developer,
+.game-info .game-modes {
     font-size: 20px;
     font-weight: var(--Regular);
 }
@@ -75,9 +78,9 @@ div.game {
 }
 
 .game-info .platform h3 {
-   font-size: 30px;
-   font-weight: var(--Medium);
-   margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: var(--Medium);
+    margin-bottom: 10px;
 }
 
 .game-info .platforms {
@@ -97,7 +100,8 @@ div.game {
     color: var(--black);
 }
 
-.game-info .platform .platform-btn:hover, .game-info .add-to-cart {
+.game-info .platform .platform-btn:hover,
+.game-info .add-to-cart {
     background-color: var(--primary);
     color: var(--secondary);
 }
@@ -114,7 +118,26 @@ div.game {
     cursor: pointer;
 }
 
-.game-info .add-to-cart, .game-info .platform .platform-btn, .game-info .platforms, .game-info .platform h3, .game-info .game-desc, .game-info .release-date, .game-info .developer, .game-info .game-modes, .game-info .d-key, .game-info .game-title, .game-info, .game-poster-mobile-margin, .game-poster-mobile, .game-poster, div.game {
+.game-info .add-to-cart:hover {
+    filter: brightness(85%);
+}
+
+/*Transitions*/
+.game-info .add-to-cart,
+.game-info .platform .platform-btn,
+.game-info .platforms,
+.game-info .platform h3,
+.game-info .game-desc,
+.game-info .release-date,
+.game-info .developer,
+.game-info .game-modes,
+.game-info .d-key,
+.game-info .game-title,
+.game-info,
+.game-poster-mobile-margin,
+.game-poster-mobile,
+.game-poster,
+div.game {
     transition: 0.2s;
 }
 
@@ -148,7 +171,9 @@ div.game {
 }
 
 @media only screen and (max-width: 900px) {
-    div.container, div.game {
+
+    div.container,
+    div.game {
         margin: 0px 0px 0px 0px;
     }
 
@@ -163,7 +188,10 @@ div.game {
         margin-bottom: 40px;
     }
 
-    .game-info .game-desc, .game-info .release-date, .game-info .developer, .game-info .game-modes {
+    .game-info .game-desc,
+    .game-info .release-date,
+    .game-info .developer,
+    .game-info .game-modes {
         font-size: 18px;
     }
 
